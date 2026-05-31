@@ -120,38 +120,3 @@ Authorization: Bearer <token>
 7. Token is sent with protected requests.
 8. Middleware verifies JWT before granting access.
 
-## Security Notes
-
-### Password Storage
-
-* Passwords are hashed using bcrypt.
-* Plain-text passwords are never stored.
-
-### Token Storage
-
-Recommended:
-
-* HttpOnly Cookies
-
-Alternative:
-
-* localStorage (less secure)
-
-### Common Pitfalls
-
-* Never expose JWT_SECRET.
-* Always validate user input.
-* Use HTTPS in production.
-* Set token expiration times.
-* Implement proper error handling.
-
-## Future Improvements
-
-* Refresh Tokens
-* Email Verification
-* Password Reset
-* Role-Based Access Control (RBAC)
-
-## Author
-
-Your Name
